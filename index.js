@@ -46,10 +46,8 @@ module.exports = function svgLoader (options = {}) {
         filename: path,
         transformAssetUrls: false
       })
-      
-      const name = (path.match(/([^/]*)\.svg/)?.slice(1,2)[0] ?? 'Icon') + 'Svg' 
 
-      return `${code}\nexport default { name: "${name}", render: render }`
+      return `${code}\nexport default { name: "IconSvg", render: render }`
     }
   }
 }
