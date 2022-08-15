@@ -46,8 +46,10 @@ module.exports = function svgLoader (options = {}) {
         filename: path,
         transformAssetUrls: false
       })
+      
+      const name = 'IconSvg1'
 
-      return `${code}\nexport default { name: "IconSvg", render: render }`
+      return `${code}\nexport default { name: "${name}", render: render }`
     }
   }
 }
